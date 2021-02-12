@@ -6,13 +6,89 @@
         xmlns:local="clr-namespace:LoginAlvaroMerino"
         mc:Ignorable="d"
         Title="MainWindow" Height="500" Width="800" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Background="{x:Null}" AllowsTransparency="True" Foreground="#FF363535">
+    <Window.Resources>
+        <Storyboard x:Key="Storyboard1">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Panel">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="9"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Panel">
+                <EasingDoubleKeyFrame KeyTime="0" Value="21"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="408"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Rectangle.RadiusX)" Storyboard.TargetName="rectangle">
+                <EasingDoubleKeyFrame KeyTime="0" Value="22"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Rectangle.RadiusY)" Storyboard.TargetName="rectangle">
+                <EasingDoubleKeyFrame KeyTime="0" Value="22"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.2" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock1">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.2" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock2">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.2" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBox">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.2" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock3">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.2" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBox1">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.2" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock4">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.2" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="button">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.2" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="textBlock5">
+                <DiscreteObjectKeyFrame KeyTime="0:0:0.2" Value="{x:Static Visibility.Hidden}"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="Logo">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="57"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="117"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="177"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="Logo">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="1.5"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="2.25"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="Logo">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.859"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="Logo">
+                <EasingDoubleKeyFrame KeyTime="0:0:0.6" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.776"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="button">
+            <BeginStoryboard Storyboard="{StaticResource Storyboard1}"/>
+        </EventTrigger>
+    </Window.Triggers>
     <Grid Background="Black">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="219*"/>
             <ColumnDefinition Width="581*"/>
         </Grid.ColumnDefinitions>
-        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="518.5" Stroke="Black" VerticalAlignment="Top" Width="815" RadiusY="12.5" RadiusX="12.5" Margin="-15,-18.5,0,0" Grid.ColumnSpan="2"/>
-        <Grid Margin="70.5,26.5,390,442.561" Grid.Column="1">
+        <Rectangle x:Name="rectangle" Fill="Black" HorizontalAlignment="Left" Height="518.5" Stroke="Black" VerticalAlignment="Top" Width="815" RadiusY="12.5" RadiusX="12.5" Margin="-15,-18.5,0,0" Grid.ColumnSpan="2"/>
+        <Grid x:Name="Logo" Margin="124.5,28,336,441.061" Grid.Column="1" RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="32*"/>
                 <ColumnDefinition Width="12*"/>
@@ -23,15 +99,25 @@
             <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="21.946" Margin="0,3.719,0,0" Stroke="Black" VerticalAlignment="Top" Width="8.25" RadiusY="9.5" RadiusX="9.5"/>
             <TextBlock HorizontalAlignment="Left" Height="24.354" Margin="2.858,6.585,-0.358,0" TextWrapping="Wrap" Text="Stocklabs" VerticalAlignment="Top" Width="66.5" Foreground="#FFF4F4F5" FontSize="14" Grid.Column="2"/>
         </Grid>
-        <Rectangle Fill="#FF1D1C1C" HorizontalAlignment="Left" Height="284" Margin="204,105,0,0" RadiusY="12.5" RadiusX="12.5" Stroke="Black" VerticalAlignment="Top" Width="424" Grid.ColumnSpan="2"/>
-        <TextBlock HorizontalAlignment="Left" Height="25" Margin="204,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="424" TextAlignment="Center" Foreground="#FFDAD5D5" Grid.ColumnSpan="2" Text="Bienvenido"/>
-        <TextBlock HorizontalAlignment="Left" Height="30" Margin="204,168,0,0" TextWrapping="Wrap" Text="Iniciar sesión en tu cuenta" VerticalAlignment="Top" Width="424" TextAlignment="Center" Foreground="#FFDAD5D5" FontWeight="Bold" FontSize="14" Grid.ColumnSpan="2"/>
-        <TextBlock HorizontalAlignment="Left" Height="19" Margin="0,203,0,0" TextWrapping="Wrap" Text="Correo electrónico o nombre de Usuario" VerticalAlignment="Top" Width="390" Foreground="#FFDAD5D5" FontWeight="Bold" FontSize="11" Grid.Column="1"/>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="26" Margin="0,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" Background="{x:Null}" Foreground="#FF767373" FontSize="11" VerticalContentAlignment="Center" Text="Introduzca su Correo electrónico o nombre de Usuario"/>
-        <TextBlock HorizontalAlignment="Left" Height="19" Margin="0,269,0,0" TextWrapping="Wrap" Text="Contraseña" VerticalAlignment="Top" Width="191" Foreground="#FFDAD5D5" FontWeight="Bold" FontSize="11" Grid.Column="1"/>
-        <TextBox Grid.Column="1" HorizontalAlignment="Left" Height="26" Margin="0,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" Background="{x:Null}" Foreground="Gray" FontSize="11" VerticalContentAlignment="Center" Text="Introduzca su contraseña "/>
-        <TextBlock HorizontalAlignment="Left" Height="19" Margin="199,269,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" Foreground="#FF6A6A6A" FontWeight="Bold" FontSize="11" Grid.Column="1" TextAlignment="Right"><Run Text="Olvidó la contraseña "/><Run Text="?"/></TextBlock>
-        <Button Content="Iniciar Sesión" Grid.Column="1" HorizontalAlignment="Left" Height="25" Margin="0,328,0,0" VerticalAlignment="Top" Width="390" Background="#FF016AC1" Foreground="White" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" Height="19" Margin="0,353,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202" Foreground="#FF6A6A6A" FontWeight="Bold" FontSize="11" Grid.Column="1" TextAlignment="Right"><Run FontWeight="Normal" Text="Todavía no te has registrado"/><Run Text="? "/><Run FontSize="12" Text="Registrar"/></TextBlock>
+        <Grid x:Name="Panel" Grid.ColumnSpan="2" Margin="204,105,172,111" RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Rectangle x:Name="rectangle1" Fill="#FF1D1C1C" HorizontalAlignment="Left" Height="284" RadiusY="12.5" RadiusX="12.5" Stroke="Black" VerticalAlignment="Top" Width="424"/>
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="25" Margin="0,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="424" TextAlignment="Center" Foreground="#FFDAD5D5" Text="Bienvenido"/>
+            <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="30" Margin="0,63,0,0" TextWrapping="Wrap" Text="Iniciar sesión en tu cuenta" VerticalAlignment="Top" Width="424" TextAlignment="Center" Foreground="#FFDAD5D5" FontWeight="Bold" FontSize="14"/>
+            <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Height="19" Margin="15,98,0,0" TextWrapping="Wrap" Text="Correo electrónico o nombre de Usuario" VerticalAlignment="Top" Width="390" Foreground="#FFDAD5D5" FontWeight="Bold" FontSize="11"/>
+            <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="26" Margin="15,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" Background="{x:Null}" Foreground="#FF767373" FontSize="11" VerticalContentAlignment="Center" Text="Introduzca su Correo electrónico o nombre de Usuario"/>
+            <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Height="19" Margin="15,164,0,0" TextWrapping="Wrap" Text="Contraseña" VerticalAlignment="Top" Width="191" Foreground="#FFDAD5D5" FontWeight="Bold" FontSize="11"/>
+            <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="26" Margin="15,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" Background="{x:Null}" Foreground="Gray" FontSize="11" VerticalContentAlignment="Center" Text="Introduzca su contraseña "/>
+            <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Height="19" Margin="214,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="191" Foreground="#FF6A6A6A" FontWeight="Bold" FontSize="11" TextAlignment="Right"><Run Text="Olvidó la contraseña "/><Run Text="?"/></TextBlock>
+            <Button x:Name="button" Content="Iniciar Sesión" HorizontalAlignment="Left" Height="25" Margin="15,223,0,0" VerticalAlignment="Top" Width="390" Background="#FF016AC1" Foreground="White" FontWeight="Bold"/>
+            <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Height="19" Margin="15,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202" Foreground="#FF6A6A6A" FontWeight="Bold" FontSize="11" TextAlignment="Right"><Run FontWeight="Normal" Text="Todavía no te has registrado"/><Run Text="? "/><Run FontSize="12" Text="Registrar"/></TextBlock>
+        </Grid>
     </Grid>
 </Window>
