@@ -1,0 +1,15 @@
+C:\Users\Usuario\source\repos\LoginAlvaroMerino\LoginAlvaroMerino\bin\Debug\LoginAlvaroMerino.exe.config
+C:\Users\Usuario\source\repos\LoginAlvaroMerino\LoginAlvaroMerino\bin\Debug\LoginAlvaroMerino.exe
+C:\Users\Usuario\source\repos\LoginAlvaroMerino\LoginAlvaroMerino\bin\Debug\LoginAlvaroMerino.pdb
+C:\Users\Usuario\source\repos\LoginAlvaroMerino\LoginAlvaroMerino\obj\Debug\LoginAlvaroMerino.csprojAssemblyReference.cache
+C:\Users\Usuario\source\repos\LoginAlvaroMerino\LoginAlvaroMerino\obj\Debug\MainWindow.g.cs
+C:\Users\Usuario\source\repos\LoginAlvaroMerino\LoginAlvaroMerino\obj\Debug\App.g.cs
+C:\Users\Usuario\source\repos\LoginAlvaroMerino\LoginAlvaroMerino\obj\Debug\LoginAlvaroMerino_MarkupCompile.cache
+C:\Users\Usuario\source\repos\LoginAlvaroMerino\LoginAlvaroMerino\obj\Debug\LoginAlvaroMerino_MarkupCompile.lref
+C:\Users\Usuario\source\repos\LoginAlvaroMerino\LoginAlvaroMerino\obj\Debug\MainWindow.baml
+C:\Users\Usuario\source\repos\LoginAlvaroMerino\LoginAlvaroMerino\obj\Debug\LoginAlvaroMerino.g.resources
+C:\Users\Usuario\source\repos\LoginAlvaroMerino\LoginAlvaroMerino\obj\Debug\LoginAlvaroMerino.Properties.Resources.resources
+C:\Users\Usuario\source\repos\LoginAlvaroMerino\LoginAlvaroMerino\obj\Debug\LoginAlvaroMerino.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\LoginAlvaroMerino\LoginAlvaroMerino\obj\Debug\LoginAlvaroMerino.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\LoginAlvaroMerino\LoginAlvaroMerino\obj\Debug\LoginAlvaroMerino.exe
+C:\Users\Usuario\source\repos\LoginAlvaroMerino\LoginAlvaroMerino\obj\Debug\LoginAlvaroMerino.pdb
